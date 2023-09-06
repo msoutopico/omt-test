@@ -1,4 +1,10 @@
-<omegat>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE omegat [
+<!ENTITY DOMAIN "https://git-codecommit.eu-central-1.amazonaws.com/v1/repos">
+<!ENTITY TARGET_LANG "hr-HR">
+<!ENTITY PREV_STEP "final-check-preparation">
+<!ENTITY THIS_STEP "final-check">
+<!ENTITY THIS_REPO "pisa_2025ft_translation_&TARGET_LANG;_&THIS_STEP;">
+]><omegat>
 	<project version="1.0">
 		<source_dir>__DEFAULT__</source_dir>
 		<source_dir_excludes>
@@ -12,7 +18,36 @@
 			<mask>**/Thumbs.db</mask>
 			<mask>**/.DS_Store</mask>
 			<mask>**/~$*</mask>
-			<c>3</c>
+			<mask>**/PISA_2025FT_QQ_LDWSTQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_ICQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_TCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_PAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLATCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLAPAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_LDWSTQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_ICQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_TCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_PAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLATCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLAPAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_LDWSTQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_ICQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_TCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_PAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLATCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLAPAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_LDWSTQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_ICQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_TCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_PAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLATCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLAPAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_LDWSTQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_ICQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_TCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_PAQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLATCQ*.xml</mask>
+			<mask>**/PISA_2025FT_QQ_FLAPAQ*.xml</mask>
 		</source_dir_excludes>
 		<target_dir>__DEFAULT__</target_dir>
 		<tm_dir>__DEFAULT__</tm_dir>
@@ -27,14 +62,19 @@
 		<support_default_translations>true</support_default_translations>
 		<remove_tags>false</remove_tags>
 		<repositories>
-			<repository type="git" url="https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/pisa_2025ft_translation_hr-HR_translation1.git">
-				<mapping local="/" repository="/" />
+			<repository type="git" url="https://github.com/msoutopico/omt-test.git">
+				<!-- self -->
+				<mapping local="/" repository="/"/>
 			</repository>
 			<repository type="git" url="https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/pisa_2025ft_translation_common.git">
-				<mapping local="omegat/filters.xml" repository="config/filters.xml" />
-				<mapping local="omegat/okf_xml@oat.fprm" repository="config/okf_xml@oat.fprm" />
-				<mapping local="omegat/segmentation.conf" repository="config/segmentation.conf" />
-				<mapping local="tm/tmx2source/FR.tmx" repository="assets/second-source/FR.tmx" />
+				<!-- source files -->
+				<!-- project settings -->
+				<mapping local="omegat/filters.xml" repository="config/filters.xml"/>
+				<mapping local="omegat/okf_xml@oat.fprm" repository="config/okf_xml@oat.fprm"/>
+				<mapping local="omegat/segmentation.conf" repository="config/segmentation.conf"/>
+				<!-- second source -->
+				<mapping local="tm/tmx2source/FR.tmx" repository="assets/second-source/FR.tmx"/>
+				<!-- language assets -->
 				<mapping local="tm/auto" repository="assets/pisa22/hr-HR/">
 					<excludes>**/*</excludes>
 					<includes>*_hr-HR*</includes>
